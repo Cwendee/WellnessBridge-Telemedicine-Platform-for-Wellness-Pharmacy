@@ -1,0 +1,17 @@
+[
+  {
+    "feedbackId": "F001",
+    "userId": "U001",
+    "comment": "Great service, easy to book appointments!",
+    "rating": 5,
+    "date": "2024-10-18"
+  },
+  {
+    "feedbackId": "F002",
+    "userId": "U002",
+    "comment": "Interface could be improved.",
+    "rating": 3,
+    "date": "2024-10-19"
+  }
+]
+

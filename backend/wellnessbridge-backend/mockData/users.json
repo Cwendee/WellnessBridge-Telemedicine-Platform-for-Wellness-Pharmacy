@@ -1,0 +1,21 @@
+[
+  {
+    "userId": "U001",
+    "name": "Debbie Johnson",
+    "email": "debbie.johnson@gmail.com",
+    "role": "patient",
+    "phone": "090-1575-3245",
+    "address": "92 College Road, Cele Bus-Stop, Ikotun",
+    "dateOfBirth": "1990-05-15"
+  },
+  {
+    "userId": "U002",
+    "name": "Dr. Bob Harris",
+    "email": "bob.harris@owch.com",
+    "role": "doctor",
+    "phone": "070-3964-9844",
+    "address": "456 Purple Street, Bungalow Estate, Jakande Estate, Oke-Afa, Lagos",
+    "dateOfBirth": "1985-09-23"
+  }
+]
+

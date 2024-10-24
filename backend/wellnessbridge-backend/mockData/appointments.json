@@ -1,0 +1,23 @@
+[
+  {
+    "appointmentId": "APT001",
+    "patientId": "P001",
+    "doctorId": "D001",
+    "date": "2024-10-22",
+    "time": "10:00 AM",
+    "status": "confirmed",
+    "reason": "General consultation",
+    "notes": "Discuss test results"
+  },
+  {
+    "appointmentId": "APT002",
+    "patientId": "P002",
+    "doctorId": "D002",
+    "date": "2024-10-23",
+    "time": "12:00 PM",
+    "status": "pending",
+    "reason": "Follow-up",
+    "notes": "Check medication effectiveness"
+  }
+]
+

@@ -1,0 +1,21 @@
+[
+  {
+    "recordId": "HR001",
+    "patientId": "P001",
+    "doctorId": "D001",
+    "date": "2024-10-10",
+    "diagnosis": "Hypertension",
+    "treatment": "Prescribed Atorvastatin 10mg daily",
+    "notes": "Monitor blood pressure regularly"
+  },
+  {
+    "recordId": "HR002",
+    "patientId": "P002",
+    "doctorId": "D002",
+    "date": "2024-09-15",
+    "diagnosis": "Skin allergy",
+    "treatment": "Prescribed Hydrocortisone cream",
+    "notes": "Avoid allergen exposure"
+  }
+]
+

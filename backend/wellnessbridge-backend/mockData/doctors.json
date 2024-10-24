@@ -1,0 +1,37 @@
+[
+  {
+    "doctorId": "D001",
+    "name": "Dr. Ben Ibezim",
+    "specialization": "Cardiologist",
+    "contact": {
+      "phone": "080-3456-7890",
+      "email": "drben.ibezim@wellnessbridge.com"
+    },
+    "availability": [
+      {
+        "day": "Monday",
+        "time": "9:00 AM - 5:00 PM"
+      },
+      {
+        "day": "Wednesday",
+        "time": "11:00 AM - 3:00 PM"
+      }
+    ]
+  },
+  {
+    "doctorId": "D002",
+    "name": "Dr. Frances Paul",
+    "specialization": "Dermatologist",
+    "contact": {
+      "phone": "070-6555-7980",
+      "email": "drfrancis.paul@wellnessbridge.com"
+    },
+    "availability": [
+      {
+        "day": "Tuesday",
+        "time": "10:00 AM - 6:00 PM"
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,23 @@
+[
+  {
+    "medicationId": "M001",
+    "name": "Atorvastatin",
+    "description": "Cholesterol-lowering medication",
+    "dosage": "10mg",
+    "sideEffects": [
+      "Headache",
+      "Muscle pain"
+    ]
+  },
+  {
+    "medicationId": "M002",
+    "name": "Metformin",
+    "description": "Type 2 diabetes medication",
+    "dosage": "500mg",
+    "sideEffects": [
+      "Nausea",
+      "Diarrhea"
+    ]
+  }
+]
+

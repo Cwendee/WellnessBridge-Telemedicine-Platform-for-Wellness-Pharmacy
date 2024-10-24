@@ -1,0 +1,19 @@
+[
+  {
+    "contactId": "C001",
+    "name": "Support Team",
+    "email": "support@wellnessbridge.com",
+    "phone": "080-4123-4657",
+    "message": "Help with resetting password",
+    "date": "2024-10-21"
+  },
+  {
+    "contactId": "C002",
+    "name": "Olumide Ajayi",
+    "email": "olumide.ajayi@wellnessbridge.com",
+    "phone": "080-2987-6543",
+    "message": "Inquiry about HMO coverage",
+    "date": "2024-10-20"
+  }
+]
+

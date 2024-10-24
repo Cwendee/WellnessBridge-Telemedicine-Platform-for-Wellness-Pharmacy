@@ -1,0 +1,21 @@
+[
+  {
+    "hmoId": "HMO001",
+    "name": "BlueCare HMO",
+    "coverage": "Basic Health Coverage",
+    "contact": {
+      "phone": "091-4234-5670",
+      "email": "contact@bluecare.com"
+    }
+  },
+  {
+    "hmoId": "HMO002",
+    "name": "SmartHealth HMO",
+    "coverage": "Comprehensive Health Plan",
+    "contact": {
+      "phone": "081-7235-5678",
+      "email": "support@smarthealth.com"
+    }
+  }
+]
+

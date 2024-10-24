@@ -1,0 +1,33 @@
+[
+  {
+    "patientId": "P001",
+    "name": "Grace Eze",
+    "age": 34,
+    "gender": "Female",
+    "contact": {
+      "phone": "070-8456-7893",
+      "email": "princesseze@outlook.com"
+    },
+    "address": "12 Ladipo Street, Oshodi",
+    "medicalHistory": [
+      "Hypertension",
+      "Asthma"
+    ]
+  },
+  {
+    "patientId": "P002",
+    "name": "Carl Jones",
+    "age": 45,
+    "gender": "Male",
+    "contact": {
+      "phone": "091-3654-3210",
+      "email": "cjones@gmail.com"
+    },
+    "address": "4 Femi Bello Street, Somolu",
+    "medicalHistory": [
+      "Diabetes",
+      "Allergy to peanuts"
+    ]
+  }
+]
+
