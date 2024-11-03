@@ -1,0 +1,210 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "default": true,
+        "type": "prometheus",
+        "uid": "be255hcyjfe2oa"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.2.2",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "process_resident_memory_bytes / 1024 / 1024\r\n",
+          "interval": "",
+          "legendFormat": "{{Resident Memory Size}}",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "sum(nodejs_gc_duration_seconds_sum{kind=\"minor\"}) by (kind)",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{GC duration (minor)}}",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "histogram_quantile(0.95, sum(nodejs_gc_duration_seconds_bucket{kind=\"minor\"}) by (le))",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{Event loop lag (95th percentile)}}",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "process_resident_memory_bytes > 1e9",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{High resident memory usage}}",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "nodejs_heap_space_size_used_bytes{space=\"old\"} / 1024 / 1024\r\n",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{Heap Space Used in Old Space}}",
+          "range": true,
+          "refId": "E"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "sum(nodejs_gc_duration_seconds_sum{kind=\"major\"}) by (kind) > 1",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{High GC duration}}",
+          "range": true,
+          "refId": "F"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "be255hcyjfe2oa"
+          },
+          "editorMode": "code",
+          "expr": "nodejs_eventloop_lag_seconds > 0.1",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "{{High event loop lag}}",
+          "range": true,
+          "refId": "G"
+        }
+      ],
+      "title": "WellnessBridge Project Monitoring",
+      "type": "timeseries"
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "WellnessBridge Dashboard",
+  "uid": "wellnessbridge-dashboard",
+  "version": 6,
+  "weekStart": ""
+}
