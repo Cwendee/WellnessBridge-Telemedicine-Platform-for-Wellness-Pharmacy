@@ -149,6 +149,7 @@ The platform’s architecture supports easy integration of new services, ensurin
 - **React App URL**: [http://wellnessbridge-telemedicine.s3-website-us-east-1.amazonaws.com](http://wellnessbridge-telemedicine.s3-website-us-east-1.amazonaws.com)
 - **Frontend URL**: [http://172.18.232.109:5000](http://172.18.232.109:5000)
 - **Frontend Metrics**: [http://localhost:5050/metrics](http://localhost:5050/metrics)
+- **Backend URL**:[http://172.18.232.109:4000](http://localhost:4000)
 - **Backend Metrics**: [http://localhost:4005/metrics](http://localhost:4005/metrics)
 - **Grafana Dashboard**: [http://172.18.232.109:3000/dashboards](http://172.18.232.109:3000/dashboards)
 - **Prometheus Graph**: [http://172.18.232.109:5050/graph](http://172.18.232.109:5050/graph)
